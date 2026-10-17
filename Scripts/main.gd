@@ -9,13 +9,13 @@ var COLLISION_MASK_CARD_SLOT = 2
 var answer_sheet = {
 	#x
 	"18.10.1.9.99" : ["pidgeot", "caterpie", "bulbasaur", "blastoise-mega", "kingler-gmax"],
-	"BI-cha 💅" :["scream-tail", "togepi", "meganium-mega", "tinkaton", "weezing-galar"],
+	"BI-cha" :["scream-tail", "togepi", "meganium-mega", "tinkaton", "weezing-galar"],
 	"Fantasias de carnaval" :["malamar-mega", "cubone", "serperior", "darkrai", "perrserker"],
 	"Não-monogamia" : ["dugtrio-alola", "combee", "exeggutor", "chimecho-mega", "probopass"],
 	"Muito gostado <3" :["clefairy", "swoobat", "leavanny", "blissey", "persian-alola"],
 	#y
 	"Topete" : ["pidgeot", "scream-tail", "malamar-mega", "dugtrio-alola", "clefairy"],
-	"pitico 🤏🤏🤏" :["caterpie", "togepi", "cubone", "combee", "swoobat"],
+	"pitico" :["caterpie", "togepi", "cubone", "combee", "swoobat"],
 	"Criado por jabuti" :["bulbasaur", "meganium-mega", "serperior", "exeggutor", "leavanny"],
 	"RPG" :["blastoise-mega", "tinkaton", "darkrai", "chimecho-mega", "blissey"],
 	"Bigode" :["kingler-gmax", "weezing-galar", "perrserker", "probopass", "persian-alola"]
@@ -23,7 +23,7 @@ var answer_sheet = {
 
 var category_colors = {
 	"Muito gostado <3": Color("#D1424C"),
-	"pitico 🤏🤏🤏": Color("#D57438"),
+	"pitico": Color("#D57438"),
 	"Topete": Color("#4BA5AB"),
 	"Criado por jabuti": Color("#7EB24E"),
 	"RPG": Color("#D8A523"),
@@ -31,7 +31,7 @@ var category_colors = {
 	"Não-monogamia": Color("#ABACC4"),
 	"Bigode": Color("#AA815A"),
 	"Fantasias de carnaval": Color("#A077BE"),
-	"BI-cha 💅": Color("#D370AA")
+	"BI-cha": Color("#D370AA")
 }
 
 var rows = {
