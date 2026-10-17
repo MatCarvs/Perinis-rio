@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://cser3cx0y388i"]
+
+[ext_resource type="FontFile" uid="uid://irvsu2na2bui" path="res://C&C Red Alert [INET].ttf" id="1_3wroe"]
+[ext_resource type="FontFile" uid="uid://b7edl434d70hu" path="res://Minecraftia-Regular.ttf" id="1_vtlm0"]
+[ext_resource type="Script" uid="uid://wdfr865gpd00" path="res://Scripts/start_button.gd" id="2_biidh"]
+[ext_resource type="Texture2D" uid="uid://bgckimt0l78wi" path="res://Sprites/Button.png" id="3_vtlm0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oauki"]
+line_spacing = 0.0
+font = ExtResource("1_vtlm0")
+font_size = 72
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="Theme" id="Theme_cxprx"]
+default_font = ExtResource("1_3wroe")
+Button/fonts/font = ExtResource("1_3wroe")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpuqj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlxvy"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rh52w"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dgjnp"]
+font = ExtResource("1_vtlm0")
+font_size = 24
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
+[node name="Node2D" type="Node2D" unique_id=856031295]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=138858716]
+z_index = -946
+offset_left = -72.0
+offset_top = -32.0
+offset_right = -32.0
+offset_bottom = 8.0
+scale = Vector2(34.68318, 19.599678)
+mouse_filter = 2
+color = Color(0.14509805, 0.15686275, 0.16078432, 1)
+
+[node name="Label" type="Label" parent="." unique_id=2045954195]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 224.0
+offset_right = 1280.0
+offset_bottom = 352.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+text = "POKéRINI"
+label_settings = SubResource("LabelSettings_oauki")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Button" type="Node2D" parent="." unique_id=1407384506]
+position = Vector2(544, 420)
+script = ExtResource("2_biidh")
+
+[node name="Button" type="Button" parent="Button" unique_id=41791044]
+light_mask = 4
+visibility_layer = 4
+z_index = 2
+texture_filter = 1
+offset_right = 192.0
+offset_bottom = 80.0
+theme = SubResource("Theme_cxprx")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_bpuqj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xlxvy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rh52w")
+icon = ExtResource("3_vtlm0")
+clip_text = true
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="Button/Button" unique_id=1150614354]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+theme_override_font_sizes/font_size = 16
+text = "INICIAR"
+label_settings = SubResource("LabelSettings_dgjnp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_down" from="Button/Button" to="Button" method="_on_button_button_down"]
+[connection signal="button_up" from="Button/Button" to="Button" method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Button/Button" to="Button" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button/Button" to="Button" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button/Button" to="Button" method="_on_button_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://wuov3qqkqij8"]
+
+[ext_resource type="Script" uid="uid://b0udr3vhtrt4x" path="res://card_manager.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://b6m07airjstkh" path="res://card.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=696311927]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1708631946]
+z_index = -946
+offset_left = -128.0
+offset_top = -48.0
+offset_right = -88.0
+offset_bottom = -8.0
+scale = Vector2(34.68318, 19.599678)
+mouse_filter = 2
+color = Color(0.14509805, 0.15686275, 0.16078432, 1)
+
+[node name="Card_manager" type="Node2D" parent="." unique_id=1595118510]
+z_index = 5
+script = ExtResource("1_0xm2m")
+
+[node name="Card" parent="Card_manager" unique_id=2004383969 instance=ExtResource("2_h2yge")]
+position = Vector2(344, 264)
+
+[node name="Card2" parent="Card_manager" unique_id=1427956871 instance=ExtResource("2_h2yge")]
+position = Vector2(752, 280)

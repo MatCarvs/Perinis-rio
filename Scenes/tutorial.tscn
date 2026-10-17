@@ -1,0 +1,487 @@
+[gd_scene format=3 uid="uid://cb1hiknrhdiq7"]
+
+[ext_resource type="Script" uid="uid://b0udr3vhtrt4x" path="res://Scripts/card_manager.gd" id="1_feyax"]
+[ext_resource type="Script" uid="uid://dcl0mbx20wqrg" path="res://Scripts/tutorial.gd" id="1_ys4pu"]
+[ext_resource type="Texture2D" uid="uid://ddtnnmlhltkko" path="res://Sprites/WhatsApp Image 2026-10-17 at 01.32.09.jpeg" id="2_70gml"]
+[ext_resource type="PackedScene" uid="uid://b6m07airjstkh" path="res://Scenes/card.tscn" id="2_omtrn"]
+[ext_resource type="PackedScene" uid="uid://mb30mex2pixj" path="res://Scenes/card_slot.tscn" id="6_p1f1o"]
+[ext_resource type="Script" uid="uid://dh1w1fx7c0h3w" path="res://Scripts/answer_card_manager.gd" id="8_on4kn"]
+[ext_resource type="PackedScene" uid="uid://bonxjvir6j4gq" path="res://Scenes/answer_card.tscn" id="9_70gml"]
+[ext_resource type="PackedScene" uid="uid://dnd4i61x2u8op" path="res://Scenes/gligar.tscn" id="9_on4kn"]
+[ext_resource type="Texture2D" uid="uid://oy8iysy2xh76" path="res://Sprites/text_box.png" id="10_8va2t"]
+[ext_resource type="FontFile" uid="uid://b7edl434d70hu" path="res://Minecraftia-Regular.ttf" id="11_8mnmb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_koko0"]
+texture = ExtResource("10_8va2t")
+texture_margin_left = 16.0
+texture_margin_top = 16.0
+texture_margin_right = 16.0
+texture_margin_bottom = 20.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="LabelSettings" id="LabelSettings_lsb8r"]
+font = ExtResource("11_8mnmb")
+font_size = 18
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uwc6k"]
+font = ExtResource("11_8mnmb")
+font_size = 18
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3wxxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_omjoq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b0sb7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_brx5c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_v40rj"]
+font = ExtResource("11_8mnmb")
+font_size = 24
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_on4kn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70gml"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8va2t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mnmb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_koko0"]
+
+[node name="tutorial" type="Node2D" unique_id=471124741]
+script = ExtResource("1_ys4pu")
+
+[node name="Perini" type="Sprite2D" parent="." unique_id=183887192]
+visible = false
+z_index = 1810
+position = Vector2(952, 368)
+texture = ExtResource("2_70gml")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1064026347]
+z_index = -946
+offset_left = -72.0
+offset_top = -32.0
+offset_right = -32.0
+offset_bottom = 8.0
+scale = Vector2(34.68318, 19.599678)
+mouse_filter = 2
+color = Color(0.14509805, 0.15686275, 0.16078432, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1924284477]
+z_index = -946
+offset_left = 32.000008
+offset_top = 32.0
+offset_right = 67.06023
+offset_bottom = 65.06177
+scale = Vector2(34.68318, 19.599678)
+mouse_filter = 2
+color = Color(0, 0, 0, 0.24313726)
+
+[node name="Card_manager" type="Node2D" parent="." unique_id=183829379]
+z_index = 5
+position = Vector2(728, 264)
+script = ExtResource("1_feyax")
+
+[node name="arctovish" parent="Card_manager" unique_id=297148087 instance=ExtResource("2_omtrn")]
+position = Vector2(168, 280)
+
+[node name="swampert" parent="Card_manager" unique_id=1656619294 instance=ExtResource("2_omtrn")]
+position = Vector2(56, 168)
+
+[node name="empoleon" parent="Card_manager" unique_id=1389488523 instance=ExtResource("2_omtrn")]
+position = Vector2(56, 280)
+
+[node name="poliwrath" parent="Card_manager" unique_id=1505308597 instance=ExtResource("2_omtrn")]
+position = Vector2(168, 56)
+
+[node name="aerodactyl" parent="Card_manager" unique_id=1643708941 instance=ExtResource("2_omtrn")]
+position = Vector2(168, 168)
+
+[node name="quagsire" parent="Card_manager" unique_id=2140950741 instance=ExtResource("2_omtrn")]
+position = Vector2(280, 280)
+
+[node name="squirtle" parent="Card_manager" unique_id=2004383969 instance=ExtResource("2_omtrn")]
+position = Vector2(280, 56)
+
+[node name="tirtouga" parent="Card_manager" unique_id=1213553961 instance=ExtResource("2_omtrn")]
+position = Vector2(280, 168)
+
+[node name="volcanion" parent="Card_manager" unique_id=2143484595 instance=ExtResource("2_omtrn")]
+position = Vector2(56, 56)
+
+[node name="Slots" type="Node2D" parent="." unique_id=736949719]
+position = Vector2(728, 264)
+
+[node name="A1" parent="Slots" unique_id=1988288161 instance=ExtResource("6_p1f1o")]
+position = Vector2(56, 56)
+
+[node name="A2" parent="Slots" unique_id=1167965522 instance=ExtResource("6_p1f1o")]
+position = Vector2(56, 168)
+
+[node name="A3" parent="Slots" unique_id=1819816334 instance=ExtResource("6_p1f1o")]
+position = Vector2(56, 280)
+
+[node name="B1" parent="Slots" unique_id=440986242 instance=ExtResource("6_p1f1o")]
+position = Vector2(168, 56)
+
+[node name="B2" parent="Slots" unique_id=938018953 instance=ExtResource("6_p1f1o")]
+position = Vector2(168, 168)
+
+[node name="B3" parent="Slots" unique_id=847297995 instance=ExtResource("6_p1f1o")]
+position = Vector2(168, 280)
+
+[node name="C1" parent="Slots" unique_id=805371351 instance=ExtResource("6_p1f1o")]
+position = Vector2(280, 56)
+
+[node name="C2" parent="Slots" unique_id=1950293345 instance=ExtResource("6_p1f1o")]
+position = Vector2(280, 168)
+
+[node name="C3" parent="Slots" unique_id=1333059402 instance=ExtResource("6_p1f1o")]
+position = Vector2(280, 280)
+
+[node name="Answer_card_manager" type="Node2D" parent="." unique_id=1054322823]
+position = Vector2(728, 152)
+script = ExtResource("8_on4kn")
+
+[node name="A" parent="Answer_card_manager" unique_id=1269513756 instance=ExtResource("9_70gml")]
+position = Vector2(56, 56)
+
+[node name="B" parent="Answer_card_manager" unique_id=852437077 instance=ExtResource("9_70gml")]
+position = Vector2(168, 56)
+
+[node name="C" parent="Answer_card_manager" unique_id=1186403721 instance=ExtResource("9_70gml")]
+position = Vector2(280, 56)
+
+[node name="1" parent="Answer_card_manager" unique_id=1170521802 instance=ExtResource("9_70gml")]
+position = Vector2(392, 168)
+
+[node name="2" parent="Answer_card_manager" unique_id=1729563729 instance=ExtResource("9_70gml")]
+position = Vector2(392, 280)
+
+[node name="3" parent="Answer_card_manager" unique_id=1390608303 instance=ExtResource("9_70gml")]
+position = Vector2(392, 392)
+
+[node name="Slots_connect" type="Control" parent="." unique_id=288531794]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 728.0
+offset_top = 264.0
+offset_right = 1064.0
+offset_bottom = 600.0
+mouse_filter = 2
+
+[node name="AB1" type="ColorRect" parent="Slots_connect" unique_id=187133024]
+visible = false
+layout_mode = 0
+offset_left = 96.0
+offset_top = 16.0
+offset_right = 112.0
+offset_bottom = 96.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="AB2" type="ColorRect" parent="Slots_connect" unique_id=198079171]
+visible = false
+layout_mode = 0
+offset_left = 96.0
+offset_top = 128.0
+offset_right = 112.0
+offset_bottom = 208.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="AB3" type="ColorRect" parent="Slots_connect" unique_id=1734012271]
+visible = false
+layout_mode = 0
+offset_left = 96.0
+offset_top = 240.0
+offset_right = 112.0
+offset_bottom = 320.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="BC1" type="ColorRect" parent="Slots_connect" unique_id=1707922003]
+visible = false
+layout_mode = 0
+offset_left = 208.0
+offset_top = 16.0
+offset_right = 224.0
+offset_bottom = 96.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="BC2" type="ColorRect" parent="Slots_connect" unique_id=1004356598]
+visible = false
+layout_mode = 0
+offset_left = 208.0
+offset_top = 128.0
+offset_right = 224.0
+offset_bottom = 208.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="BC3" type="ColorRect" parent="Slots_connect" unique_id=472879399]
+visible = false
+layout_mode = 0
+offset_left = 208.0
+offset_top = 240.0
+offset_right = 224.0
+offset_bottom = 320.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="X1" type="ColorRect" parent="Slots_connect" unique_id=1040682152]
+visible = false
+layout_mode = 0
+offset_left = 320.0
+offset_top = 16.0
+offset_right = 336.0
+offset_bottom = 96.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="X2" type="ColorRect" parent="Slots_connect" unique_id=596291884]
+visible = false
+layout_mode = 0
+offset_left = 320.0
+offset_top = 128.0
+offset_right = 336.0
+offset_bottom = 208.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="X3" type="ColorRect" parent="Slots_connect" unique_id=988844150]
+visible = false
+layout_mode = 0
+offset_left = 320.0
+offset_top = 240.0
+offset_right = 336.0
+offset_bottom = 320.0
+scale = Vector2(1.96, 1)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="12A" type="ColorRect" parent="Slots_connect" unique_id=1443327994]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="12B" type="ColorRect" parent="Slots_connect" unique_id=980311282]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 96.0
+offset_right = 208.0
+offset_bottom = 112.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="12C" type="ColorRect" parent="Slots_connect" unique_id=137420835]
+visible = false
+layout_mode = 0
+offset_left = 240.0
+offset_top = 96.0
+offset_right = 320.0
+offset_bottom = 112.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="23A" type="ColorRect" parent="Slots_connect" unique_id=985038229]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 208.0
+offset_right = 96.0
+offset_bottom = 224.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="23B" type="ColorRect" parent="Slots_connect" unique_id=47917681]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 208.0
+offset_right = 208.0
+offset_bottom = 224.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="23C" type="ColorRect" parent="Slots_connect" unique_id=635817528]
+visible = false
+layout_mode = 0
+offset_left = 240.0
+offset_top = 208.0
+offset_right = 320.0
+offset_bottom = 224.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="XA" type="ColorRect" parent="Slots_connect" unique_id=816769459]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 96.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="XB" type="ColorRect" parent="Slots_connect" unique_id=1393968616]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = -16.0
+offset_right = 208.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="XC" type="ColorRect" parent="Slots_connect" unique_id=1372201283]
+visible = false
+layout_mode = 0
+offset_left = 240.0
+offset_top = -16.0
+offset_right = 320.0
+scale = Vector2(1, 1.96)
+color = Color(0.7294118, 0.7294118, 0.7294118, 1)
+
+[node name="Gligar" parent="." unique_id=1746682263 instance=ExtResource("9_on4kn")]
+position = Vector2(176, 512)
+
+[node name="TutorialText" type="PanelContainer" parent="." unique_id=1735185568]
+z_index = -1
+z_as_relative = false
+texture_filter = 1
+custom_minimum_size = Vector2(300, 180)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 152.0
+offset_top = 152.0
+offset_right = 664.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_koko0")
+
+[node name="MarginContainer" type="MarginContainer" parent="TutorialText" unique_id=109916250]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TutorialText/MarginContainer" unique_id=1816654937]
+layout_mode = 2
+
+[node name="TutorialTextLabel" type="Label" parent="TutorialText/MarginContainer/VBoxContainer" unique_id=1950510620]
+layout_mode = 2
+text = "Quando todos os Pokémon da mesma categoria estiverem alinhados, a categoria será revelada. Também será mostrado quando faltar apenas 	um Pokémon para completar uma categoria."
+label_settings = SubResource("LabelSettings_lsb8r")
+autowrap_mode = 3
+
+[node name="Page" type="Label" parent="TutorialText" unique_id=906092743]
+layout_mode = 2
+size_flags_vertical = 8
+text = "1/4"
+label_settings = SubResource("LabelSettings_uwc6k")
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="Button1" type="Control" parent="." unique_id=521568460]
+z_index = 5
+z_as_relative = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 168.0
+offset_top = 304.0
+offset_right = 208.0
+offset_bottom = 344.0
+
+[node name="button_tutorial_1" type="Button" parent="Button1" unique_id=2082093720]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 72.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3wxxv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_omjoq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_b0sb7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_brx5c")
+
+[node name="Label" type="Label" parent="Button1/button_tutorial_1" unique_id=196659466]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "<"
+label_settings = SubResource("LabelSettings_v40rj")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button2" type="Control" parent="." unique_id=99221782]
+z_index = 5
+z_as_relative = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 520.0
+offset_top = 304.0
+offset_right = 560.0
+offset_bottom = 344.0
+
+[node name="button_tutorial_2" type="Button" parent="Button2" unique_id=461829167]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.8
+anchor_bottom = 0.8
+offset_left = 80.0
+offset_top = 72.0
+offset_right = 88.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_on4kn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_70gml")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8va2t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8mnmb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_koko0")
+
+[node name="Label" type="Label" parent="Button2/button_tutorial_2" unique_id=1945889788]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = ">"
+label_settings = SubResource("LabelSettings_v40rj")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="Button1/button_tutorial_1" to="." method="_on_button_tutorial_1_pressed"]
+[connection signal="pressed" from="Button2/button_tutorial_2" to="." method="_on_button_tutorial_2_pressed"]

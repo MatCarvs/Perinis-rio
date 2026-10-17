@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://wuov3qqkqij8"]
+
+[ext_resource type="Texture2D" uid="uid://clfcdc5m045i5" path="res://Sprites/Caterpie_Shiny.png" id="1_ig7tw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wxxv"]
+size = Vector2(15.189875, 95.99999)
+
+[node name="Main" type="Node" unique_id=469831687]
+
+[node name="Card" type="Node2D" parent="." unique_id=1875484308]
+z_index = 2
+position = Vector2(312, 264)
+
+[node name="Caterpie_Shiny" type="Sprite2D" parent="Card" unique_id=173976094]
+texture = ExtResource("1_ig7tw")
+
+[node name="Area2D" type="Area2D" parent="Card" unique_id=699783877]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card/Area2D" unique_id=1783010031]
+modulate = Color(0, 1, 1, 1)
+scale = Vector2(6.319999, 1)
+shape = SubResource("RectangleShape2D_3wxxv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=890895866]
+visibility_layer = 512
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.19215687, 0.1882353, 0.1882353, 1)
