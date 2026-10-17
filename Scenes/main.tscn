@@ -866,7 +866,6 @@ position = Vector2(616, 616)
 position = Vector2(824, 608)
 
 [node name="HintLayer" type="CanvasLayer" parent="." unique_id=1325733150]
-visible = false
 script = ExtResource("13_fdnlq")
 
 [node name="HintPopup" type="PanelContainer" parent="HintLayer" unique_id=1002035961]
