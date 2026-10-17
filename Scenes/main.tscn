@@ -917,6 +917,7 @@ theme = SubResource("Theme_g4j7u")
 icon = SubResource("CanvasTexture_fdnlq")
 
 [node name="Cake" type="Sprite2D" parent="." unique_id=764950365]
+visible = false
 z_index = 2000
 z_as_relative = false
 texture_filter = 1
